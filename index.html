@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discount</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1
+        class="text-5xl font-medium bg-gray-100 w-3/4 mx-auto py-5 text-green-600 text-center"
+      >
+        Discount Price
+      </h1>
+    </header>
+    <main>
+      <section class="w-3/4 bg-sky-400 p-8 mx-auto">
+        <input
+        id="price-input"
+          class="px-4 py-2 rounded-lg"
+          placeholder="Enter Price"
+          type="text"
+        />
+        <input
+        id="coupon-input"
+          class="px-4 py-2 rounded-lg"
+          placeholder="Enter coupon"
+          type="text"
+        />
+        <button id="apply-btn" class="px-5 py-2 rounded-lg font-medium text-white bg-orange-500">
+          Apply
+        </button>
+      </section>
+      <section class="w-3/4 bg-sky-400 px-8 pb-4 mx-auto">
+        <h1 class="text-white text-2xl font-medium inline-block">
+          Your Discounted Price Is:
+        </h1>
+        <h2 id="price" class="inline-block text-white text-3xl font-medium">
+          00
+        </h2>
+      </section>
+    </main>
+    <script src="JS/dom.js"></script>
+  </body>
+</html>
